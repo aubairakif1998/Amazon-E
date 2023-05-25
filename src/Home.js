@@ -13,14 +13,14 @@ function Home() {
 
         <div className="home__row">
           <Product
-            id="12345"
+            id={12121313212}
             title="The lean start"
             price={23.33}
             image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
             rating={5}
           />
           <Product
-            id="12349"
+            id={44343434}
             title="Samsung curved LED"
             price={122.33}
             image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SY466_.jpg"
@@ -32,21 +32,21 @@ function Home() {
         </div>
         <div className="home__row">
           <Product
-            id="12345"
+            id={99999}
             title="The lean start"
             price={23.33}
             image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
             rating={5}
           />
           <Product
-            id="12349"
+            id={12324368876869869}
             title="Samsung curved LED"
             price={122.33}
             image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SY466_.jpg"
             rating={5}
           />
           <Product
-            id="1234989"
+            id={9844343476}
             title="Ipad / Iphone INC"
             price={223.33}
             image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
@@ -56,7 +56,7 @@ function Home() {
         <div className="home__row">
           {" "}
           <Product
-            id="1234533333323233"
+            id={43236532652636215361}
             title="Samsung LC 49, Curved LED Gaming Monitor"
             price={23.33}
             image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
