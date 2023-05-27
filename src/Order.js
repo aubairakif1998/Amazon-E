@@ -1,0 +1,34 @@
+import React from "react";
+import currencyFormatter from "currency-formatter";
+import "./Order.css";
+import moment from "moment";
+import CheckoutProduct from "./CheckoutProduct";
+function Order({ order }) {
+  return (
+    <div className="order">
+      <h2>Order</h2>
+      <p>{moment.unix(order.data.created).format("MMMM Do YYYY, h:mma")}</p>
+      <p className="order__id">
+        <small>{order.id}</small>
+      </p>
+      {order.data.basket?.map((item) => (
+        <CheckoutProduct
+          id={item.id}
+          title={item.title}
+          image={item.image}
+          price={item.price}
+          rating={item.rating}
+          hideButton={true}
+        />
+      ))}
+      <div className="order__total">
+        Order Total:{" "}
+        {currencyFormatter.format(order.data.amount / 100, {
+          locale: "en-US",
+        })}
+      </div>
+    </div>
+  );
+}
+
+export default Order;
